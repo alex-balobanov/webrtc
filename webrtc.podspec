@@ -9,6 +9,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "9.0"
   s.source       = { :git => "https://github.com/alex-balobanov/webrtc.git", :tag => "#{s.version}" }
   s.source_files = "WebRTC.framework/Headers/*.h"
+  s.vendored_frameworks = 'WebRTC.framework'
   s.requires_arc = true
-  s.xcconfig  =  { "LIBRARY_SEARCH_PATHS" => "$(PODS_ROOT)/webrtc", "HEADER_SEARCH_PATHS" => "${PODS_ROOT}/Headers/webrtc" }
+  s.xcconfig  =  { "LIBRARY_SEARCH_PATHS" => "$(PODS_ROOT)/#{s.name}", "HEADER_SEARCH_PATHS" => "${PODS_ROOT}/Headers/#{s.name}" }
 end
