@@ -2,6 +2,14 @@
 #
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
 
+# depot tools and files
+depot_tools/
+.gclient
+.gclient_entries
+
+# WebRTC source files
+src/
+
 ## Build generated
 build/
 DerivedData/
