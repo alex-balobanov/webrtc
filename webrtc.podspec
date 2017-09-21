@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "webrtc"
-  s.version      = "62.1"
+  s.version      = "62.2"
   s.summary      = "WebRTC framework."
   s.description  = "Custom build of WebRTC framework for iOS."
   s.homepage     = "https://webrtc.org/"
